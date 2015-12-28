@@ -9,4 +9,7 @@ Or, if you prefer to build it on your own:
 `docker build -t objectstyle/activemq .`
 
 Run the image as daemon and bind it to port 8161:  
-`docker run -d --name activemq --net=osllc -p $DOCKER_IP:8161:8161 objectstyle/activemq`
+`docker run -d --name activemq \
+	--net=osllc \
+	-p $DOCKER_IP:8161:8161 \
+	objectstyle/activemq`
